@@ -11,10 +11,13 @@
   z-index: 0;
 }
 
-select{
-  position: absolute;
-  top: 250px;
+input{
+  position: relative;
   z-index: 1;
+  background-color: rgba(255, 255, 255, 0.863);
+  padding: 10px 15px;
+  border-radius: 5px;
+  width: 150px;
 }
 
 .dropdown-content{
@@ -24,4 +27,45 @@ select{
   border-radius: 10px;
   background-color: rgba(243, 243, 243, 0.856);
 }
+
+button{
+  background-color: rgba(255, 255, 255, 0.863);
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.form{
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  gap: 10px;
+  bottom: 650px;
+}
+
+.error-pop{
+  height: 50px;
+  width: 260px;
+  background-color: rgba(255, 67, 67, 0.712);
+  position: absolute;
+  z-index: 1;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-pop >h1{
+  font-size: 16px;
+  color: white;
+}
+
+.error-pop > button{
+  transform: scale(0.75);
+  background-color: transparent;
+  color: white;
+  position: relative;
+  left: 20px;
+}
+
+
 
